@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Oh So Flattening",
-      "description": "Tastes like memories",
+      "description": "Test",
       "image_url": "https://i.ibb.co/wQ4G0w1/flatiron-brew.png",
       "reviews": [
         "It's flat! Just the way I like it!!",
@@ -26,13 +26,14 @@
         "kkd",
         "kkd",
         "kkd",
-        "test"
+        "test",
+        "tes"
       ]
     },
     {
       "id": "2",
       "name": "Pilsen Lager",
-      "description": "Tastes like memories",
+      "description": "Test",
       "image_url": "https://images.punkapi.com/v2/4.png",
       "reviews": [
         "Spicy crab cakes, say what?!",
@@ -42,7 +43,7 @@
     {
       "id": "3",
       "name": "Avery Brown Dredge",
-      "description": "Tastes like memories",
+      "description": "Test",
       "image_url": "https://images.punkapi.com/v2/5.png",
       "reviews": [
         "Tastes like a weird squid"
@@ -51,7 +52,7 @@
     {
       "id": "4",
       "name": "Electric India",
-      "description": "Tastes like memories",
+      "description": "Test",
       "image_url": "https://images.punkapi.com/v2/6.png",
       "reviews": [
         "I remember nothing"
@@ -60,7 +61,7 @@
     {
       "id": "5",
       "name": "AB:12",
-      "description": "Tastes like memories",
+      "description": "Test",
       "image_url": "https://images.punkapi.com/v2/7.png",
       "reviews": [
         "I lost my pet squirrel to this beer",
@@ -70,7 +71,7 @@
     {
       "id": "6",
       "name": "AB:07",
-      "description": "Whisky cask-aged imperial scotch ale. Beer perfect for when the rain is coming sideways. Liquorice, plum and raisin temper the warming alcohol, producing a beer capable of holding back the Scottish chill.",
+      "description": "Test",
       "image_url": "https://images.punkapi.com/v2/9.png",
       "reviews": [
         "I like to drink this while watching TV",
