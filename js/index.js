@@ -59,6 +59,12 @@ function beerDisplay(selectedBeer) {
     for (let review of selectedBeer.reviews) {
         let beerReview = document.createElement('li');
         beerReview.textContent = review;
+
+        // Add event listener to remove review when clicked
+        beerReview.addEventListener('click', () => {
+            beerReviewList.removeChild(beerReview);
+        });
+
         beerReviewList.appendChild(beerReview);
     }
 
@@ -82,6 +88,7 @@ function beerDisplay(selectedBeer) {
         }
     });
 }
+
 
 // Function to Display Navigation on the Left Side
 function navDisplay(beers) {
