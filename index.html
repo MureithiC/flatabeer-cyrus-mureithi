@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>FlataBeer</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script defer type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+
+    <!-- Header section with site title and navigation that is floated to the left -->
+    <header>
+        <h1>FlataBeer</h1>
+        <nav>
+            <!-- Unordered list for beer names (to be populated dynamically from server) -->
+            <ul id="beer-list">
+              <li>Beer Name</li>
+              <li>Another Beer Name</li>
+              <li>Get Another Beer Name</li>
+            </ul>
+          </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Container for displaying beer details -->
+        <div class="beer-details">
+          <h2 id="beer-name">Beer Name</h2>
+          <!-- Beer image with placeholder (replaced by actual image. To generate by AI -->
+          <img id="beer-image" alt="Beer Name" src="src/test-image.jpg" />
+          <p>
+            <em id="beer-description">Beer Description Goes Here</em>
+          </p>
+  
+          <!-- Form for updating beer description -->
+          <form id="des-form">
+            <label class="title-text">Edit Description:</label>
+            <textarea id="description"></textarea>
+            <button type="submit">Update Beer</button>
+          </form>
+  
+          <!-- Heading for customer reviews -->
+          <h3>Reviews from Customers</h3>
+          <ul id="review-list">
+            <li>Get actual reviews</li>
+            <li>Add from db</li>
+          </ul>
+          
+          <!-- Form for adding new beer review -->
+          <form id="review-form">
+            <label class="title-text">Enter your Review:</label>
+            <textarea id="review"></textarea>
+            <button type="submit">submit</button>
+          </form>
+        </div>
+    </main>
+
+    <!-- Footer section with copyright information -->
+    <footer id="footer-details">
+        &copy; 2024 Cyrus Mureithi
+    </footer>
+
+</body>
+</html>
