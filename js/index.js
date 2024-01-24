@@ -39,7 +39,7 @@ async function updateBeer(beer) {
 }
 
 // Function to Display Beer Details
-function beerDisplay(beer) {
+function beerDisplay(selectedBeer) {
     const beerDescriptionForm = document.getElementById('des-form');
     const beerEditDescription = document.getElementById('description');
     const beerReviewList = document.getElementById('review-list');
@@ -50,16 +50,23 @@ function beerDisplay(beer) {
     }
 
     // Display beer details
-    beerName.textContent = beer.name;
-    beerImage.src = beer.image_url;
-    beerDescription.textContent = beer.description;
-    beerEditDescription.value = beer.description;
+    beerName.textContent = selectedBeer.name;
+    beerImage.src = selectedBeer.image_url;
+    beerDescription.textContent = selectedBeer.description;
+    beerEditDescription.value = selectedBeer.description;
+
+    // Display beer reviews
+    for (let review of selectedBeer.reviews) {
+        let beerReview = document.createElement('li');
+        beerReview.textContent = review;
+        beerReviewList.appendChild(beerReview);
+    }
 
     // Event listener to update beer description
     beerDescriptionForm.addEventListener('submit', async (event) => {
         event.preventDefault();
-        beer.description = beerEditDescription.value;
-        await updateBeer(beer);
+        selectedBeer.description = beerEditDescription.value;
+        await updateBeer(selectedBeer);
     });
 
     // Event listener to add reviews
@@ -68,8 +75,8 @@ function beerDisplay(beer) {
 
         // Conditional to not allow users to add empty reviews
         if (beerReviewText.value.trim() !== '') {
-            beer.reviews.push(beerReviewText.value.trim());
-            await updateBeer(beer);
+            selectedBeer.reviews.push(beerReviewText.value.trim());
+            await updateBeer(selectedBeer);
         } else {
             alert('Please add a review!');
         }
@@ -123,3 +130,5 @@ async function getBeerFromNav() {
 
 // Call the getBeerFromNav function
 getBeerFromNav();
+
+
